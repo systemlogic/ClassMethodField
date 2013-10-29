@@ -1,8 +1,6 @@
 package com;
 public class HelloWorld extends Hello{
-	HelloWorld(){
-		
-	}
+	HelloWorld(){}
 	HelloWorld(int a){
 		super();
 		public_int_variable = a;

@@ -16,7 +16,7 @@ public class TestClass {
 		TestClass obj2 = new TestClass(HelloWorld.class);
 		TestClass obj3 = new TestClass(Class.forName("com.HelloWorld"));
 		
-		TestClass[] clsArr =  {obj2,obj3};
+		TestClass[] clsArr =  {obj2};
 		
 		for(TestClass obj : clsArr){
 			System.out.println("-------------------Declared Fields-------------------");
