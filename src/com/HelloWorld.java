@@ -12,6 +12,7 @@ public class HelloWorld extends Hello{
 	}
 	double default_variable;
 	public int public_int_variable ;
+	@SuppressWarnings("unused")
 	private long private_long_variable;
 	protected float protected_float_varibale ;
 	static String static_string_variable;
@@ -22,6 +23,7 @@ public class HelloWorld extends Hello{
 	protected int increment(int variable){
 		return variable + 20;
 	}
+	@SuppressWarnings("unused")
 	private String increment(String variable){
 		return variable + 10;
 	}
