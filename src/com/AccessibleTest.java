@@ -24,6 +24,22 @@ public class AccessibleTest {
 			Object temp = method.invoke(obj, "20");
 			System.out.println("-------------------Private Method access---------------------");
 			System.out.println("private method return value=" + temp);
+			
+			System.out.println("-------------------Final variable access---------------------");
+			Field finalField = cls.getDeclaredField("final_String_variable");
+			finalField.setAccessible(true);
+			Object finalObject = cls.newInstance();
+			System.out.println("Before : " + finalField.get(finalObject));
+			finalField.set(finalObject, "New Final variable value");
+			System.out.println("After : " + finalField.get(finalObject));
+			
+			
+			System.out.println("-------------------Static variable access---------------------");
+			Field staticField = cls.getDeclaredField("static_string_variable");
+			Object staticObject = cls.newInstance();
+			System.out.println("Before : " + staticField.get(staticObject));
+			staticField.set(staticObject, "New Static value");
+			System.out.println("After : " + staticField.get(staticObject));
 	}
 
 }

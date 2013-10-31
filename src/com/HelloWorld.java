@@ -5,8 +5,8 @@ public class HelloWorld extends Hello{
 	@SuppressWarnings("unused")
 	private long private_long_variable;
 	protected float protected_float_varibale ;
-	static String static_string_variable;
-	final String final_String_variable="";
+	static String static_string_variable = "Static value";
+	final String final_String_variable="Final Before value";
 	
 	HelloWorld(){
 		super();
